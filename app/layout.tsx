@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className="bg-gray-50">
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
