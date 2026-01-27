@@ -1,6 +1,6 @@
-# Wanderzo
+# DZCamp
 
-Wanderzo is a modern and responsive travel website built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
+DZCamp is a modern and responsive travel website built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
 It provides a smooth user experience for exploring destinations, planning trips, and discovering new places through a clean and minimal interface.
 
