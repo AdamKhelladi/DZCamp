@@ -70,7 +70,7 @@ export default function Page() {
             type="button"
             title="Login"
             icon={loginIcon}
-            bgVariant="bg-gray-900"
+            bgVariant="bg-neutral-800"
             bgHoverVariant="hover:bg-green-600"
           ></Button>
         </div>
