@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WANDERZO",
+  title: "DZCamp",
   description: "Travel UI/UX App for Camping",
 };
 

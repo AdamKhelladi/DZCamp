@@ -31,7 +31,7 @@ export default function Page() {
         <Link href={"/"}>
           <Image
           className="lg:-mt-2"
-            src="/wanderzoLogo.png"
+            src="/dzcampLogo.png"
             width={150}
             height={100}
             alt="Wanderzo Logo"
@@ -71,7 +71,7 @@ export default function Page() {
             title="Login"
             icon={loginIcon}
             bgVariant="bg-gray-900"
-            bgHoverVariant="hover:bg-green-700"
+            bgHoverVariant="hover:bg-green-600"
           ></Button>
         </div>
       </nav>
