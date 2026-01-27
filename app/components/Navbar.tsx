@@ -58,7 +58,7 @@ export default function Page() {
         <ul className="hidden h-full lg:flex gap-12 items-center">
           {navLinks.map((link) => (
             <Link href={link.href} key={link.key}>
-              <li className="font-medium text-gray-700 hover:text-black duration-300">
+              <li className="font-medium text-gray-600 hover:text-black duration-300">
                 {link.label}
               </li>
             </Link>
