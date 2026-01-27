@@ -1,6 +1,8 @@
 
 export default function Page() {
   return (
-    <div>Hiro section</div>
+    <section className="border-2 border-gray-300">
+
+    </section>
   )
 }

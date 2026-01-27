@@ -31,7 +31,7 @@ export default function Page() {
         <Link href={"/"}>
           <Image
           className="lg:-mt-2"
-            src="/images/wanderzoLogo.png"
+            src="/wanderzoLogo.png"
             width={150}
             height={100}
             alt="Wanderzo Logo"
