@@ -57,7 +57,7 @@ export default function Page() {
           <Button
             type="button"
             title={buttonTitle}
-            bgVariant="bg-green-600"
+            bgVariant="bg-green-600  min-w-58"
             bgHoverVariant="hover:bg-orange-500"
           ></Button>
           <div className="flex items-center gap-2">
