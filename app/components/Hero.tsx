@@ -1,7 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./Button/page";
+import { useEffect, useState } from "react";
 
 export default function Page() {
+  const [buttonTitle, setButtonTitle] = useState("Download App");
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setButtonTitle(prev => prev === "Download App" ? "Comming Soon!" : "Download App");
+    }, 2000);
+    return () => clearInterval(interval);
+  })
+
   return (
     <section className="relative flex flex-col gap-10 py-0 md:py-10 lg:py-0 pb-12 md:gap-18 md:flex-row">
       <div className="absolute -z-10 -right-4 -top-20 h-screen w-screen bg-[url('/pattern-bg.png')] bg-cover bg-center md:-right-6 lg:-right-8 xl:-right-10 md:-top-60" />
@@ -45,7 +56,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-4 items-center">
           <Button
             type="button"
-            title="Download App"
+            title={buttonTitle}
             bgVariant="bg-green-600"
             bgHoverVariant="hover:bg-orange-500"
           ></Button>

@@ -30,7 +30,7 @@ const features = [
 export default function Page() {
   return (
     <section
-      className="flex flex-col lg:items-center overflow-hidden bg-cover bg-center bg-no-repeat py-8"
+      className="flex flex-col md:items-center overflow-hidden bg-cover bg-center bg-no-repeat py-8"
       style={{ backgroundImage: `url(/feature-bg.png)` }}
     >
       <div className="relative z-20 mb-10 text-start">
