@@ -3,7 +3,7 @@ import Button from "./Button/page";
 
 export default function Page() {
   return (
-    <section className="relative flex flex-col gap-10 py-0 md:py-10 pb-32 md:gap-18 lg:py-10 md:flex-row">
+    <section className="relative flex flex-col gap-10 py-0 md:py-10 pb-20 md:gap-18 lg:py-10 md:flex-row">
       <div className="absolute -z-10 -right-4 -top-20 h-screen w-screen bg-[url('/pattern-bg.png')] bg-cover bg-center md:-right-6 lg:-right-8 xl:-right-10 md:-top-60" />
       <div>
         <Image
