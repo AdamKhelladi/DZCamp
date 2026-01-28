@@ -14,12 +14,8 @@ export default function Footer() {
 
           <div className="mb-6 md:mb-0">
             <a href="/" className="flex items-center gap-2">
-              <img
-                src="camp.svg"
-                className="h-14 mb-5"
-                alt="Logo"
-              />
-              <span className="text-heading self-center text-2xl md:text-4xl font-extrabold whitespace-nowrap">
+              <img src="camp.svg" className="h-14 mb-5" alt="Logo" />
+              <span className="text-heading self-center text-4xl font-extrabold whitespace-nowrap">
                 DZCAMP
               </span>
             </a>
@@ -34,7 +30,11 @@ export default function Footer() {
               </h2>
               <ul className="text-body font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://github.com/AdamKhelladi"
+                    target="_blanc"
+                    className="hover:underline"
+                  >
                     GitHub
                   </a>
                 </li>
@@ -53,12 +53,16 @@ export default function Footer() {
               </h2>
               <ul className="text-body font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="//www.linkedin.com/in/adam-tech-ab6827269"
+                    target="_blanc"
+                    className="hover:underline"
+                  >
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="https://www.instagram.com/adxmtech" target="_blanc" className="hover:underline">
                     Instagram
                   </a>
                 </li>
@@ -93,7 +97,7 @@ export default function Footer() {
           <span className="text-sm text-body sm:text-center">
             © 2026{" "}
             <a href="#" className="hover:underline">
-              MedTEST™
+              DZCAMP™
             </a>{" "}
             . All Rights Reserved.
           </span>
@@ -101,7 +105,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             {/* Facebook */}
-            <a href="#" className="text-body hover:text-heading">
+            <a href="https://www.facebook.com" target="_blanc" className="text-body hover:text-heading">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   fillRule="evenodd"
@@ -121,7 +125,7 @@ export default function Footer() {
             </a>
 
             {/* Twitter */}
-            <a href="#" className="text-body hover:text-heading ms-5">
+            <a href="https://x.com/AdxmTech" target="_blanc" className="text-body hover:text-heading ms-5">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
               </svg>
@@ -129,7 +133,7 @@ export default function Footer() {
             </a>
 
             {/* GitHub */}
-            <a href="#" className="text-body hover:text-heading ms-5">
+            <a href="https://github.com/AdamKhelladi" target="_blanc" className="text-body hover:text-heading ms-5">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   fillRule="evenodd"
