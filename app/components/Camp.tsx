@@ -48,7 +48,7 @@ function CampSite({ bgImg, title, subtitle, pplJoined }: CampSiteProps) {
 export default function Page() {
   return (
     <section className="relative flex flex-col py-6 lg:mb-10 lg:py-20 xl:mb-20">
-      <div className="scrollbar-hide overflow-x-auto flex h-85 w-full items-start justify-start gap-6 lg:h-100 xl:h-160">
+      <div className="scrollbar-hide overflow-x-auto flex h-85 w-full items-start justify-start gap-6 lg:h-100 xl:h-120">
         {CampSite({
           bgImg: "/campImg4.jpg",
           title: "Mountains Adventure Camp",
@@ -64,16 +64,23 @@ export default function Page() {
         })}
       </div>
 
-      <div className="lg:absolute bottom-0 right-50 lg:w-110 px-4 md:px-8 py-8 mt-6 text-white rounded-xl bg-green-600">
+      <div className="relative lg:absolute lg:bottom-0 lg:right-50 lg:w-100 px-4 md:px-10 py-8 mt-6 text-white rounded-4xl bg-green-600">
         <h2 className="font-semibold text-4xl mb-4">
           <span className="font-extrabold text-5xl">Filling Lost</span> and Not
           Knowing the Way ?
         </h2>
-
         <p className="">
           We provide a solution to help you find your way back to the campsite
           and navigate through the wilderness with confidence.
         </p>
+
+        <Image
+          className="absolute top-0 -right-2 lg:-right-10 opacity-30"
+          src="/mapLogo2.png"
+          alt="Map Logo"
+          width={250}
+          height={250}
+        />
       </div>
     </section>
   );

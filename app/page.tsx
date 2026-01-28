@@ -10,7 +10,6 @@ export default function Home() {
     <Container>
       <Hero />
       <Camp />
-      <Guide />
       <Features />
       <GetApp />
     </Container>
