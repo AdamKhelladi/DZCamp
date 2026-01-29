@@ -1,27 +1,33 @@
 type CampingSpots = {
   id: number;
   name: string;
-  type: string;
+  location: string;
+  type: string; // Beaches, Waterfalls, Creeks, Lakes, Mountains, Forests, Deserts
+  description: string;  
   image: string;
   mapUrl: string;
-  description: string;  
+  top: boolean;
 }
 
 export const campingSpots: CampingSpots[] = [
   {
     id: 1,
-    name: "Atlas Mountains",
+    name: "TIZA",
+    location: "Tizi Ouzou, Tigzirt",
     type: "Mountain",
-    image: "/spots/atlas.jpg",
-    mapUrl: "https://maps.google.com/?q=...",
     description: "Beautiful mountain camping area",
+    image: "/spots/atlas.jpg",
+    mapUrl: "https://maps.google.com/?q=atlas+mountains",
+    top: true,
   },
   {
     id: 2,
-    name: "Sahara Camp",
-    type: "Desert",
-    image: "/spots/sahara.jpg",
-    mapUrl: "https://maps.google.com/?q=...",
-    description: "Peaceful desert night experience",
+    name: "Kabylie Forest",
+    location: "Setif, Setif",
+    type: "Forest",
+    description: "Peaceful forest camping",
+    image: "/spots/kabylie.jpg",
+    mapUrl: "https://maps.google.com/?q=kabylie+forest",
+    top: false,
   },
 ];
