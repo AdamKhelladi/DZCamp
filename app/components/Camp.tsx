@@ -66,12 +66,12 @@ export default function Page() {
 
       <div className="relative lg:absolute lg:bottom-0 lg:right-50 lg:w-100 px-4 md:px-10 py-8 mt-6 text-white rounded-4xl bg-green-600">
         <h2 className="font-semibold text-4xl mb-4">
-          <span className="font-extrabold text-5xl">Filling Lost</span> and Not
+          <span className="font-extrabold text-5xl">Feeling Lost</span> and Not
           Knowing the Way ?
         </h2>
         <p className="">
-          We provide a solution to help you find your way back to the campsite
-          and navigate through the wilderness with confidence.
+          We help you discover the best locations for camping and explore nature
+          with confidence.
         </p>
 
         <Image
