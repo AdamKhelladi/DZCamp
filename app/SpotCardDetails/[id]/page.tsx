@@ -23,8 +23,8 @@ export default async function Page({ params }: props) {
 
   return (
     <Container>
-      <section className="min-h-screen py-8">
-        <div className="max-w-115 mx-auto bg-gray-50 rounded-2xl pb-4">
+      <section className="py-8">
+        <div className="max-w-115 mx-auto bg-gray-50 rounded-2xl pb-6">
           <ImageCarousel
             images={[spot.image1, spot.image2, spot.image3]}
             name={spot.name}

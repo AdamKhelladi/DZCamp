@@ -25,7 +25,6 @@ export default function ImageCarousel({ images, name }: ImageCarouselProps) {
     setCurrentIndex(index);
   };
 
-  // Handle touch events for mobile swipe
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStart(e.targetTouches[0].clientX);
   };
@@ -36,19 +35,16 @@ export default function ImageCarousel({ images, name }: ImageCarouselProps) {
 
   const handleTouchEnd = () => {
     if (touchStart - touchEnd > 75) {
-      // Swiped left
       goToNext();
     }
 
     if (touchStart - touchEnd < -75) {
-      // Swiped right
       goToPrevious();
     }
   };
 
   return (
     <div className="relative mb-6">
-      {/* Main Image Container */}
       <div
         className="relative overflow-hidden rounded-2xl"
         onTouchStart={handleTouchStart}
@@ -73,10 +69,9 @@ export default function ImageCarousel({ images, name }: ImageCarouselProps) {
           ))}
         </div>
 
-        {/* Previous Button */}
         <button
           onClick={goToPrevious}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
+          className="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
           aria-label="Previous image"
         >
           <svg
@@ -94,10 +89,9 @@ export default function ImageCarousel({ images, name }: ImageCarouselProps) {
           </svg>
         </button>
 
-        {/* Next Button */}
         <button
           onClick={goToNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
+          className="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-all"
           aria-label="Next image"
         >
           <svg
@@ -115,13 +109,11 @@ export default function ImageCarousel({ images, name }: ImageCarouselProps) {
           </svg>
         </button>
 
-        {/* Image Counter */}
         <div className="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
           {currentIndex + 1} / {images.length}
         </div>
       </div>
 
-      {/* Dots Indicator */}
       <div className="flex justify-center gap-2 mt-4">
         {images.map((_, index) => (
           <button
