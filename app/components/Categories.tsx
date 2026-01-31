@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { categories } from "../constants";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
+
   return (
     <section className="py-20 flex flex-col md:items-center gap-8">
       <div className="relative z-20 md:mb-10 text-start">
@@ -15,9 +20,12 @@ export default function Page() {
         <h2 className="text-4xl lg:text-5xl font-extrabold">Categories</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 w-full duration-300">
         {categories.map((category, index) => (
-          <div key={index} className="relative rounded-2xl w-full h-130 overflow-hidden">
+          <div
+            key={index}
+            className="relative rounded-3xl w-full h-130 overflow-hidden duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-black/90"
+          >
             <Image
               src={category.image}
               alt={category.name}
@@ -32,6 +40,9 @@ export default function Page() {
               <button
                 type="button"
                 className="mt-6 inline-flex items-center text-white bg-green-600 hover:bg-orange-500 duration-300 text-lg rounded-4xl cursor-pointer box-border border border-transparent shadow-xs font-medium leading-5 px-4 py-3"
+                onClick={() =>
+                  router.push(`/CampingSpots/${category.name.toLowerCase()}`)
+                }
               >
                 {" "}
                 Explore Camping Spots{" "}
