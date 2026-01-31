@@ -36,37 +36,37 @@ export const features = [
 export const categories = [
   {
     name: "Beaches",
-    image: "/categories/beach.jpg",
+    image: "/category-beaches.jpg",
     description: "Relax by the sea at our top beach camping spots.",
   },
   {
     name: "Waterfalls",
-    image: "/categories/waterfall.jpg",
+    image: "/category-waterfalls.jpg",
     description: "Camp near stunning waterfalls for a refreshing experience.",
   },
   {
     name: "Creeks",
-    image: "/categories/creek.jpg",
+    image: "/category-creeks.jpg",
     description: "Enjoy the tranquility of creekside camping locations.",
   },
   {
     name: "Lakes",
-    image: "/categories/lake.jpg",
+    image: "/category-lakes.jpg",
     description: "Set up camp by beautiful lakes and enjoy water activities.",
   },
   {
     name: "Mountains",
-    image: "/categories/mountain.jpg",
+    image: "/category-mountains.jpg",
     description: "Experience breathtaking views at our mountain camping spots.",
   },
   {
     name: "Forests",
-    image: "/categories/forest.jpg",
+    image: "/category-forests.jpg",
     description: "Immerse yourself in nature with forest camping adventures.",
   },
   {
     name: "Deserts",
-    image: "/categories/desert.jpg",
+    image: "/category-deserts.jpg",
     description: "Discover the unique beauty of desert camping locations.",
   },
 ]
