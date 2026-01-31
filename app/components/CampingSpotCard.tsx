@@ -1,24 +1,31 @@
 "use client";
 
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
+import { campingSpots } from "../campingSpots";
 
 type CampingSpot = {
   id: number;
   name: string;
   location: string;
+  type: string; 
+  description: string;
   image1: string;
+  image2: string;
+  image3: string;
+  mapUrl: string;
   rating: number;
+  top: boolean;
 };
 
 export default function Page({ spot }: { spot: CampingSpot }) {
+  const router = useRouter();
+
   return (
     <div
       key={spot.id}
       className="rounded-2xl bg-gray-50 w-full cursor-pointer shadow-lg shadow-black/10 hover:-translate-y-1.5 hover:shadow-lg hover:shadow-black/20 duration-300"
-      onClick={() => {
-        console.log("Click on spot:", spot.name);
-      }}
+      onClick={() => router.push(`/SpotCardDetails/${spot.id}`)}
     >
       <Image
         className="rounded-2xl"
