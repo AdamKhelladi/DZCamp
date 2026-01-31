@@ -14,7 +14,7 @@ export default function Footer() {
 
           <div className="mb-6 md:mb-0">
             <a href="/" className="flex items-center gap-2">
-              <img src="camp.svg" className="h-14 mb-5" alt="Logo" />
+              <img src="/camp.svg" className="h-14 mb-5" alt="Logo" />
               <span className="text-heading self-center text-4xl font-extrabold whitespace-nowrap">
                 DZCAMP
               </span>
