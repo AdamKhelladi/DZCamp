@@ -2,7 +2,7 @@
 export default function Page() {
   return (
     <section>
-      <h2>Camping Spots</h2>
+      <h1>Camping Spots Page</h1>
     </section>
   )
 }

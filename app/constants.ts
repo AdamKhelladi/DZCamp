@@ -32,3 +32,41 @@ export const features = [
     img: "/location.svg",
   },
 ];
+
+export const categories = [
+  {
+    name: "Beaches",
+    image: "/categories/beach.jpg",
+    description: "Relax by the sea at our top beach camping spots.",
+  },
+  {
+    name: "Waterfalls",
+    image: "/categories/waterfall.jpg",
+    description: "Camp near stunning waterfalls for a refreshing experience.",
+  },
+  {
+    name: "Creeks",
+    image: "/categories/creek.jpg",
+    description: "Enjoy the tranquility of creekside camping locations.",
+  },
+  {
+    name: "Lakes",
+    image: "/categories/lake.jpg",
+    description: "Set up camp by beautiful lakes and enjoy water activities.",
+  },
+  {
+    name: "Mountains",
+    image: "/categories/mountain.jpg",
+    description: "Experience breathtaking views at our mountain camping spots.",
+  },
+  {
+    name: "Forests",
+    image: "/categories/forest.jpg",
+    description: "Immerse yourself in nature with forest camping adventures.",
+  },
+  {
+    name: "Deserts",
+    image: "/categories/desert.jpg",
+    description: "Discover the unique beauty of desert camping locations.",
+  },
+]

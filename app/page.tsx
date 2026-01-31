@@ -4,7 +4,7 @@ import Camp from "./components/Camp";
 import Features from "./components/Features";
 import GetApp from "./components/GetApp";
 import TopDestinations from "./components/TopDestinations";
-import CampingSpots from "./components/CampingSpots";
+import CampingSpots from "./components/Categories";
 
 export default function Home() {
   return (
